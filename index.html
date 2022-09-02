@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="js/layui-v2.5.6/layui/css/layui.css" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <title>安全管理大屏</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-content">
+            <!-- 顶部 -->
+            <div class="box-top">
+                <!-- 顶部下拉框 -->
+                <div class="top-select">
+                    <div class="select-top">
+                        <img class="background-img" src="img/multiple-1.png" alt="" />
+                        <select class="select sectionIdSelect">
+                            <option value="0">测试项目</option>
+                            <option value="1">测试项目</option>
+                            <option value="2">测试项目</option>
+                        </select>
+                    </div>
+                    <div class="select-bottom">
+                        <img class="background-img" src="img/multiple-3.png" alt="" />
+                    </div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="top-title">
+                    <img class="background-img" src="img/multiple-0.png" alt="" />
+                    <div class="title-top">名称</div>
+                    <div class="title-bottm">管理大屏</div>
+                </div>
+                <!-- 顶部时间 -->
+                <div class="top-time">
+                    <div class="time-top">
+                        <img class="background-img" src="img/multiple-2.png" alt="" />
+                        <div class="time-tm">2020-12-04</div>
+                        <div class="time-city delayAddRess">江苏省苏州市xxx</div>
+                        <div class="time-fullScreen fullScreen">
+                            <img class="background-img" src="img/multiple-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="time-bottom">
+                        <img class="background-img" src="img/multiple-3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="box-echarts">
+                <!-- 左 -->
+                <div class="box-echarts-left">
+                    <!-- 延期未开始 -->
+                    <div class="echarts-left-top">
+                        <div class="echarts-content">
+                            <div class="delay-title">延期未开始</div>
+                            <div class="delay-number">
+                                <div class="delay-number-top">
+                                    <div class="delay-number-left">
+                                        <div class="number-left-top">延期未整改数量(个)</div>
+                                        <div class="number-left-bottom">4</div>
+                                    </div>
+                                    <div class="delay-number-middle"></div>
+                                    <div class="delay-number-left">
+                                        <div class="number-left-top">已整改数量(个)</div>
+                                        <div class="number-left-bottom number-left-bottom1">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delay-number-bottom">
+                                    <div class="number-bottom-li">
+                                        <div class="bottom-li-title">所有问题(个)</div>
+                                        <div class="bottom-li-title1">49</div>
+                                    </div>
+                                    <div class="number-bottom-li">
+                                        <div class="bottom-li-title">本月问题(个)</div>
+                                        <div class="bottom-li-title1">49</div>
+                                    </div>
+                                    <div class="number-bottom-li">
+                                        <div class="bottom-li-title">本月整改(个)</div>
+                                        <div class="bottom-li-title1 bottom-li-title2">49</div>
+                                    </div>
+                                    <div class="number-bottom-li number-bottom-li1">
+                                        <div class="bottom-li-title">即将延期(个)</div>
+                                        <div class="bottom-li-title1 bottom-li-title3">49</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/multiple-5.png" alt="" />
+                    </div>
+                    <div class="echarts-left-bottom">
+                        <div class="echarts-content">
+                            <!-- 工艺工序问题分布 -->
+                            <div class="echarts-content-top">
+                                <div class="content-top-title">工艺工序问题分布</div>
+                                <div class="content-top-echarts technology"></div>
+                                <div class="content-top-title1">工艺工序图</div>
+                            </div>
+                            <div class="echarts-content-top echarts-content-bottom">
+                                <div class="content-top-title"></div>
+                                <div class="content-top-echarts procedure"></div>
+                                <div class="content-top-title1 content-top-title2">
+                                    工艺下各工序分布
+                                </div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/security-3.png" alt="" />
+                    </div>
+                </div>
+                <!-- 中 -->
+                <div class="box-echarts-middle">
+                    <div class="echarts-middle-top">
+                        <div class="middle-top-content">
+                            <!-- 隐患/问题趋势图 -->
+                            <div class="middle-content-top">
+                                <div class="trend-echarts-title">
+                                    <div class="trend-title-left">隐患/问题趋势图</div>
+                                    <div class="trend-title-right">
+                                        <div class="trend-title-right1 trendClick trendActive">30日</div>
+                                        <div class="trend-title-right1 trendClick trend-title-right2">季度</div>
+                                        <div class="trend-title-right1 trendClick">12月</div>
+                                    </div>
+                                </div>
+                                <div class="trend-echarts-content trend"></div>
+                            </div>
+                            <div class="middle-content-bottom">
+                                <!-- 责任对比图(柱状图) -->
+                                <div class="bottom-left">
+                                    <div class="left-title">
+                                        <div class="left-title1">责任主体对比图</div>
+                                        <div class="left-title2">
+                                            <div class="trend-title-right1 responsibilityClick  trendActive">工区</div>
+                                            <div class="trend-title-right1 responsibilityClick trend-title-right2">班组</div>
+                                            <div class="trend-title-right1 responsibilityClick">发起人员</div>
+                                        </div>
+                                    </div>
+                                    <div class="left-content responsibilityBarChart"></div>
+                                </div>
+                                <div class="bottom-cont "></div>
+                                <!-- 责任对比图(玫瑰图) -->
+                                <div class="bottom-left bottom-right">
+                                    <div class="bottom-cont1 responsibilityRoseChart"></div>
+                                    <div class="bottom-cont2">
+                                        <div class="bottom-cont2-title">
+                                            <div class="cont2-title-left cont2-title-left1">构件类型</div>
+                                            <div class="cont2-title-left">问题数量</div>
+                                        </div>
+
+                                        <div class="bottom-cont2-ct">
+                                            <div class="ct-list roseChartClick roseChartActive">
+                                                <div class="cont2-ct"></div>
+                                                <div class="cont2-ct1">构件类型1</div>
+                                                <div class="cont2-ct2">10个</div>
+                                            </div>
+                                            <div class="ct-list roseChartClick">
+                                                <div class="cont2-ct"></div>
+                                                <div class="cont2-ct1">构件类型1</div>
+                                                <div class="cont2-ct2">10个</div>
+                                            </div>
+                                            <div class="ct-list roseChartClick">
+                                                <div class="cont2-ct"></div>
+                                                <div class="cont2-ct1">构件类型1</div>
+                                                <div class="cont2-ct2">10个</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/security-1.png" alt="" />
+                    </div>
+                    <div class="echarts-middle-bottom">
+                        <!-- 问题动态 -->
+                        <div class="problemTrends-echarts">
+                            <div class="problemTrends-title">
+                                <div class="problemTrends-title-left">问题动态</div>
+                                <div class="problemTrends-title-right">某某某工区</div>
+                            </div>
+                            <div class="problemTrends-content">
+                                <div class="problemTrends-list">
+                                    <div class="problemTrends-list-left">
+                                        <div class="problemTrends-list-index">1</div>
+                                        <div class="problemTrends-list-index1">【安全问题】</div>
+                                        <div class="problemTrends-list-index2">问题内容字段</div>
+                                    </div>
+                                    <div class="problemTrends-list-right">2020-10-20</div>
+                                </div>
+                                <div class="problemTrends-list">
+                                    <div class="problemTrends-list-left">
+                                        <div class="problemTrends-list-index">2</div>
+                                        <div class="problemTrends-list-index1">【安全问题】</div>
+                                        <div class="problemTrends-list-index2">问题内容字段</div>
+                                    </div>
+                                    <div class="problemTrends-list-right">2020-10-20</div>
+                                </div>
+                                <div class="problemTrends-list">
+                                    <div class="problemTrends-list-left">
+                                        <div class="problemTrends-list-index">1</div>
+                                        <div class="problemTrends-list-index1">【安全问题】</div>
+                                        <div class="problemTrends-list-index2">问题内容字段</div>
+                                    </div>
+                                    <div class="problemTrends-list-right">2020-10-20</div>
+                                </div>
+                                <div class="problemTrends-list">
+                                    <div class="problemTrends-list-left">
+                                        <div class="problemTrends-list-index">2</div>
+                                        <div class="problemTrends-list-index1">【安全问题】</div>
+                                        <div class="problemTrends-list-index2">问题内容字段</div>
+                                    </div>
+                                    <div class="problemTrends-list-right">2020-10-20</div>
+                                </div>
+                                <div class="problemTrends-list">
+                                    <div class="problemTrends-list-left">
+                                        <div class="problemTrends-list-index">1</div>
+                                        <div class="problemTrends-list-index1">【安全问题】</div>
+                                        <div class="problemTrends-list-index2">问题内容字段</div>
+                                    </div>
+                                    <div class="problemTrends-list-right">2020-10-20</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/security-2.png" alt="" />
+                    </div>
+                </div>
+                <!-- 右 -->
+                <div class="box-echarts-left">
+                    <div class="echarts-left-top">
+                        <div class="echarts-content">
+                            <div class="delay-title">安全巡查</div>
+                            <div class="delay-number delay-number1">
+                                <div class="delay-number-top delay-number-top1">
+                                    <div class="delay-number-left">
+                                        <div class="number-left-top">检查点数量(个)</div>
+                                        <div class="number-left-bottom">4</div>
+                                    </div>
+                                    <div class="delay-number-middle"></div>
+                                    <div class="delay-number-left">
+                                        <div class="number-left-top">已消除数量(个)</div>
+                                        <div class="number-left-bottom number-left-bottom1 number-left-bottom2">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delay-number-bottom delay-number-bottom1">
+                                    <div class="number-bottom-ul">
+                                        <div class="bottom-ul-title">所有问题(个)</div>
+                                        <div class="bottom-ul-title1">49</div>
+                                    </div>
+                                    <div class="number-bottom-ul">
+                                        <div class="bottom-ul-title">排查问题</div>
+                                        <div class="bottom-ul-title1">49</div>
+                                    </div>
+                                    <div class="number-bottom-ul">
+                                        <div class="bottom-ul-title">完成整改</div>
+                                        <div class="bottom-ul-title1">49</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/multiple-5.png" alt="" />
+                    </div>
+                    <div class="echarts-left-bottom">
+                        <div class="echarts-content">
+                            <div class="echarts-content-top">
+                                <div class="content-top-title">问题等级分部</div>
+                                <div class="content-top-echarts">
+                                    <div class="top-echarts-left problemLevel"></div>
+                                    <div class="top-echarts-right">
+                                        <div class="echarts-right-list problemLevelClick">
+                                            <div class="list-left" style="background-color: #F038A1;"></div>
+                                            <div class="list-right">重要</div>
+                                        </div>
+                                        <div class="echarts-right-list problemLevelClick">
+                                            <div class="list-left" style="background-color: #FFA31D;"></div>
+                                            <div class="list-right">次要</div>
+                                        </div>
+                                        <div class="echarts-right-list problemLevelClick">
+                                            <div class="list-left" style="background-color: #00CEFF;"></div>
+                                            <div class="list-right">一般</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="echarts-content-top echarts-content-bottom">
+                                <div class="content-top-title">问题类型</div>
+                                <div class="content-top-echarts problemType"></div>
+                            </div>
+                        </div>
+                        <img class="background-img" src="img/security-3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/myMap.js"></script>
+<script src="js/swiper/swiper.min.js"></script>
+<script src="js/layui-v2.5.6/layui/layui.js"></script>
+<script>
+    //页面加载成功后初始化缩放
+    $(function () {
+        trans();
+    });
+    //监听屏幕大小变化
+    $(window).resize(function () {
+        trans();
+    });
+    //缩放实现
+    function trans() {
+        //获取当前屏幕可视宽、高
+        var wid = $(window).width();
+        var hei = $(window).height();
+        //var innerHeight =  window.innerHeight; //window的高度，即手机的高度
+        //预设原始像素比例（不同LED大屏比例可修改设置）
+        var temp = 1920 / 1080;
+        //当前屏幕像素比例
+        var c_temp = wid / hei;
+        //当前屏幕宽度大于高度
+        if (temp <= c_temp) {
+            //以高度缩放 填满， 宽度按比例位移
+            var h = hei / 1080;
+            //计算位移的大小：屏幕当前可视宽度 减去页面内容（document）缩放后宽度 ，然后除以2（即左右平均分配的空白宽度大小），然后除以缩放比例 h（重要：因为是按比例缩放的，所以位移大小也需要按比例计算）
+            var translate_w = (wid - 1920 * h) / 2 / h;
+            $(".box").css(
+                "-webkit-transform",
+                "scale(" + h + ") translate(" + translate_w + "px,0px)"
+            );
+            document.body.style.transformOrigin = "left top";
+        } else {
+            //以宽度缩放 填满， 高度按比例位移
+            var r = $(window).width() / 1920;
+            //计算位移的大小：屏幕当前可视高度 减去页面内容（document）缩放后高度 ，然后除以2（即上下平均分配的空白高度大小），然后除以缩放比例 r（重要：因为是按比例缩放的，所以位移大小也需要按比例计算）
+            var translate_h = (hei - 1080 * r) / 2 / r;
+            $(".box").css(
+                "-webkit-transform",
+                "scale(" + r + ") translate(0px," + translate_h + "px)"
+            );
+            document.body.style.transformOrigin = "left top";
+        }
+    }
+</script>
+
+</html>
